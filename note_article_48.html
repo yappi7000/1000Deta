@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>年齢を重ねるほど恋愛が豊かになる人の共通点｜1000人のデータ公開</title>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700;900&family=Noto+Sans+JP:wght@300;400;500;700&display=swap');
+  :root{--ink:#1a1410;--accent:#c9463d;--gold:#c49a3c;--rose:#e8a0a0;--sage:#7a9e7e;--cream:#faf7f2;--light:#f5f0e8;--muted:#7a6a5a;--border:#e0d5c5;--line-green:#06c755;}
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{background:#fff;color:var(--ink);font-family:'Noto Sans JP',sans-serif;font-size:16px;line-height:1.9;max-width:680px;margin:0 auto;padding:24px 20px 80px;}
+  .copy-bar{text-align:right;margin-bottom:20px;}
+  .copy-btn{background:#222;color:#fff;border:none;padding:9px 18px;font-size:13px;font-family:'Noto Sans JP',sans-serif;cursor:pointer;border-radius:4px;letter-spacing:.5px;transition:background .2s;}
+  .copy-btn:hover{background:#444;}.copy-btn.copied{background:#4a7c59;}
+  .hero{background:linear-gradient(135deg,#1a1410 0%,#3d2b1f 100%);color:#faf7f2;padding:40px 32px 36px;border-radius:12px;margin-bottom:36px;position:relative;overflow:hidden;}
+  .hero::after{content:'💕';position:absolute;right:24px;bottom:16px;font-size:56px;opacity:.15;}
+  .hero-badge{display:inline-block;background:var(--accent);color:white;font-size:11px;font-weight:700;padding:3px 12px;border-radius:20px;letter-spacing:1px;margin-bottom:14px;}
+  .hero h1{font-family:'Noto Serif JP',serif;font-size:clamp(19px,3.5vw,25px);font-weight:900;line-height:1.55;margin-bottom:10px;}
+  .hero-tagline{font-size:13px;color:rgba(250,247,242,.55);letter-spacing:1px;}
+  .intro{font-size:16px;line-height:2.1;margin-bottom:36px;padding:0 4px;}
+  .intro .big{font-family:'Noto Serif JP',serif;font-size:19px;font-weight:700;color:var(--accent);display:block;margin:12px 0;line-height:1.7;}
+  .toc{background:var(--light);border-left:4px solid var(--gold);border-radius:0 8px 8px 0;padding:24px 28px;margin-bottom:44px;}
+  .toc-head{font-size:12px;font-weight:700;letter-spacing:3px;color:var(--gold);margin-bottom:14px;}
+  .toc ol{list-style:none;counter-reset:tc;}
+  .toc ol li{counter-increment:tc;font-size:14px;padding:5px 0;border-bottom:1px dashed var(--border);display:flex;align-items:flex-start;gap:10px;}
+  .toc ol li:last-child{border-bottom:none;}
+  .toc ol li::before{content:counter(tc);background:var(--ink);color:white;font-size:10px;font-weight:700;min-width:20px;height:20px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;}
+  .section{margin-bottom:56px;}
+  .section-tag{font-size:11px;font-weight:700;letter-spacing:2px;color:var(--muted);margin-bottom:6px;}
+  .section h2{font-family:'Noto Serif JP',serif;font-size:clamp(17px,2.8vw,21px);font-weight:700;line-height:1.55;margin-bottom:20px;padding-bottom:10px;border-bottom:2px solid var(--border);}
+  .section h2 .num{display:inline-block;background:var(--accent);color:white;font-size:12px;font-weight:700;padding:2px 9px;border-radius:4px;margin-right:8px;vertical-align:middle;font-family:'Noto Sans JP',sans-serif;}
+  .section p{font-size:15.5px;line-height:2;margin-bottom:14px;}
+  .txt-xl{font-family:'Noto Serif JP',serif;font-size:19px;font-weight:700;color:var(--accent);display:block;line-height:1.7;margin:10px 0 16px;}
+  .box-dark{background:#1a1410;color:#faf7f2;border-radius:10px;padding:22px 26px;margin:20px 0;font-size:15px;line-height:1.9;}
+  .box-dark .eh{font-size:20px;margin-bottom:8px;display:block;}
+  .box-rose{background:#fff5f5;border:1.5px solid var(--rose);border-radius:10px;padding:20px 24px;margin:20px 0;font-size:15px;line-height:1.9;}
+  .box-rose .lbl{font-size:11px;font-weight:700;color:var(--accent);letter-spacing:2px;margin-bottom:8px;display:block;}
+  .box-gold{background:#fffbf0;border:1.5px solid var(--gold);border-radius:10px;padding:20px 24px;margin:20px 0;font-size:15px;line-height:1.9;}
+  .box-gold .lbl{font-size:11px;font-weight:700;color:var(--gold);letter-spacing:2px;margin-bottom:8px;display:block;}
+  .box-sage{background:#f4faf5;border-left:4px solid var(--sage);border-radius:0 8px 8px 0;padding:18px 22px;margin:20px 0;font-size:15px;line-height:1.9;}
+  .task{background:linear-gradient(135deg,#1a3a2a 0%,#0f2419 100%);color:#e8f5ec;border-radius:12px;padding:26px 28px;margin-top:28px;}
+  .task-label{font-size:11px;font-weight:700;letter-spacing:3px;color:#6fcf8e;margin-bottom:10px;display:flex;align-items:center;gap:8px;}
+  .task h3{font-family:'Noto Serif JP',serif;font-size:16px;font-weight:700;margin-bottom:14px;color:#fff;}
+  .task ul{list-style:none;}
+  .task ul li{font-size:14px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,.08);display:flex;gap:10px;align-items:flex-start;line-height:1.8;}
+  .task ul li:last-child{border-bottom:none;}
+  .task ul li::before{content:'✅';flex-shrink:0;}
+  .divider{text-align:center;color:var(--border);font-size:18px;letter-spacing:10px;margin:44px 0;}
+  .closing{background:linear-gradient(135deg,#fdf6f0 0%,#faf7f2 100%);border:1px solid var(--border);border-radius:12px;padding:32px;margin-top:56px;text-align:center;}
+  .closing h2{font-family:'Noto Serif JP',serif;font-size:20px;font-weight:700;margin-bottom:14px;}
+  .closing p{font-size:15px;line-height:2;color:var(--muted);}
+  .line-cta{background:linear-gradient(135deg,#06c755 0%,#04a344 100%);color:white;border-radius:14px;padding:30px 28px;margin-top:40px;text-align:center;}
+  .line-cta .li{font-size:40px;margin-bottom:10px;display:block;}
+  .line-cta h3{font-family:'Noto Serif JP',serif;font-size:18px;font-weight:700;margin-bottom:12px;line-height:1.5;}
+  .line-cta p{font-size:14px;line-height:1.8;margin-bottom:20px;opacity:.92;}
+  .line-btn{display:inline-block;background:white;color:#06c755;font-weight:700;font-size:15px;padding:13px 32px;border-radius:50px;text-decoration:none;letter-spacing:.5px;box-shadow:0 4px 14px rgba(0,0,0,.15);}
+  .line-sub{font-size:12px;margin-top:12px;opacity:.75;}
+  #article-text{display:none;}
+  strong{font-weight:700;}
+</style>
+
+</head>
+<body>
+<div class="copy-bar"><button class="copy-btn" onclick="copyText()">📋 テキストをコピー</button></div>
+<div class="hero">
+  <span class="hero-badge">🔓 秘密公開型</span>
+  <h1>年齢を重ねるほど恋愛が豊かになる人の共通点｜1000人のデータ公開</h1>
+  <div class="hero-tagline">豊かな恋愛は、年齢とともに育つ。</div>
+</div>
+<div class="intro"><p>「年齢を重ねるほど恋愛が豊かになる」という人がいる。</p>
+<p>一方で「年齢とともに恋愛が難しくなる」という人もいる。</p>
+<p>1000人のデータを見ると、その差がはっきりわかった。</p>
+<p><strong>豊かになる人には、5つの共通点があった。</strong></p></div>
+<div class="toc">
+  <div class="toc-head">📖 目次</div>
+  <ol><li>「豊かになる人」と「難しくなる人」の分岐点</li>
+<li>共通点①　過去の恋愛を「財産」と捉えている</li>
+<li>共通点②　「今の自分」を肯定している</li>
+<li>共通点③　相手に「期待しすぎない」</li>
+<li>共通点④　「深い一つ」を大切にできる</li>
+<li>共通点⑤　恋愛を「人生の全て」にしていない</li>
+<li>今日からすぐできる3つの行動</li></ol>
+</div>
+<div class="section"><div class="section-tag">FORK</div><h2>🌿 「豊かになる人」と「難しくなる人」の分岐点</h2><p>1000人を分析した結果、分岐点は「過去への向き合い方」だった。</p><div class="box-dark"><span class="eh">📊</span>豊かになる人：過去の経験を「学び」として次に活かす<br>難しくなる人：過去の傷を「トラウマ」として引きずる<br><br><strong>同じ経験でも、どう解釈するかで未来が変わる。</strong></div></div><div class="divider">✦ ✦ ✦</div><div class="section"><div class="section-tag">C1</div><h2><span class="num">1</span>💎 共通点①　過去の恋愛を「財産」と捉えている</h2><p>失恋・離婚・長年の別れ。これらを「財産」と言える人が、次の恋愛で豊かになる。</p><div class="box-rose"><span class="lbl">📝 データから</span>1000人中、「過去の恋愛全てに感謝できる」と答えた人の95%が、その後の恋愛を「豊かだ」と評価していた。</div><div class="task"><div class="task-label">📌 実践タスク</div><h3>過去の恋愛を「財産」に変える</h3><ul><li>過去の恋愛から「学んだこと」を3つ書く</li><li>「あの経験があったから今の自分がいる」を声に出して言う</li><li>元交際相手への感謝を1つ見つける（憎しみからの解放）</li></ul></div></div><div class="divider">✦ ✦ ✦</div><div class="section"><div class="section-tag">C2</div><h2><span class="num">2</span>🌸 共通点②　「今の自分」を肯定している</h2><p>「今の自分でいい」と思えている人の恋愛は豊かだ。自分を肯定している人は、相手も肯定できる。</p><div class="box-sage">💬 自己肯定感と恋愛の豊かさは正比例する。1000人のデータで最も相関が高かったのが「自己肯定感の高さ」と「恋愛満足度」だった。</div></div><div class="divider">✦ ✦ ✦</div><div class="section"><div class="section-tag">C3</div><h2><span class="num">3</span>🎯 共通点③　相手に「期待しすぎない」</h2><p>期待が高すぎる人は、常に「失望」を経験する。期待値を適切に保てる人の恋愛は安定している。</p><div class="box-dark"><span class="eh">💡</span>適切な期待値とは：<br><br>「この人はこういう人だ」を受け入れること。<br>「もっとこうしてほしい」の前に「この人のここが好き」を言える状態。<br><br><strong>相手を「変えよう」とせず「一緒にいよう」と思える人が、豊かな恋愛をしている。</strong></div></div><div class="divider">✦ ✦ ✦</div><div class="section"><div class="section-tag">C4</div><h2><span class="num">4</span>💕 共通点④　「深い一つ」を大切にできる</h2><p>数より質。一つの関係を丁寧に深めることができる人は、年齢とともに恋愛が豊かになる。</p><div class="box-rose"><span class="lbl">📝 データから</span>「交際人数が多い人」より「一つの関係を長く続けた人」の方が、恋愛満足度が高い傾向があった。</div></div><div class="divider">✦ ✦ ✦</div><div class="section"><div class="section-tag">C5</div><h2><span class="num">5</span>⚖️ 共通点⑤　恋愛を「人生の全て」にしていない</h2><p>恋愛が「人生の全て」になっている人は、恋愛に依存しやすい。恋愛を「人生の豊かな一部」と捉えている人が、最も豊かな恋愛をしている。</p><div class="box-dark"><span class="eh">💡</span>仕事・友人・趣味・恋愛のバランスが取れている人は、恋愛に依存しない。<br>依存しない人は、余裕がある。<br>余裕がある人が、最もモテる。<br><br><strong>恋愛を豊かにしたいなら、恋愛以外も豊かにする。</strong></div></div><div class="divider">✦ ✦ ✦</div>
+<div class="section">
+  <div class="section-tag">ACTION</div>
+  <h2>🚀 今日からすぐできる3つの行動</h2>
+  <p>この記事を読んで終わりにしないでほしい。知識は使って初めて意味を持つ。今すぐできることから始めよう。</p>
+  <div class="box-gold"><span class="lbl">🌙 今夜やること</span>「過去の恋愛から学んだこと」を3つ書く。財産として捉える練習。</div>
+<div class="box-gold"><span class="lbl">📅 今週やること</span>「今の自分のいいところ」を3つ書く。自己肯定感の土台を作る。</div>
+<div class="box-gold"><span class="lbl">🗓️ 今月やること</span>恋愛以外の「人生の豊かさ」を1つ増やす。趣味・友人・仕事のどれかに投資する。</div>
+
+  <div class="box-dark"><span class="eh">💌</span>年齢を重ねるほど恋愛が豊かになる人は、特別じゃない。5つの共通点を持つ人だ。今日から一つずつ持っていこう。</div>
+</div>
+<div class="closing">
+  <h2>📖 最後まで読んでくれてありがとう</h2>
+  <p>この記事が少しでも役に立ったら、<strong>スキ・フォロー</strong>をお願いします。<br>次回は「イケオジ研究家が分析した女性がときめく男性のたった1つの共通点」を公開予定です。</p>
+</div>
+
+<div class="line-cta">
+  <span class="li">💬</span>
+  <h3>もっと深い話は<br>LINE公式でしています</h3>
+  <p>大人の恋愛・美魔女・イケオジに関する<br>
+  <strong>より具体的なノウハウ・最新情報・個別相談</strong>を<br>
+  LINE公式でお届けしています。<br>
+  登録は無料。いつでも解除できます。</p>
+  <a class="line-btn" href="https://lin.ee/RyRnspx" target="_blank">💚 LINE公式を友だち追加する</a>
+  <div class="line-sub">✨ 登録特典あり｜無料でいつでも解除OK</div>
+</div>
+
+<div id="article-text">年齢を重ねるほど恋愛が豊かになる人の共通点｜1000人のデータ公開
+
+豊かになる人の5つの共通点：
+①過去の恋愛を「財産」と捉えている
+②「今の自分」を肯定している
+③相手に期待しすぎない
+④深い一つを大切にできる
+⑤恋愛を人生の全てにしていない
+
+💬 もっと深い話はLINE公式でしています
+→ https://lin.ee/RyRnspx
+</div>
+
+<script>
+function copyText(){
+  var t=document.getElementById('article-text').innerText;
+  if(navigator.clipboard){
+    navigator.clipboard.writeText(t).then(function(){flash();}).catch(function(){fallback(t);});
+  } else { fallback(t); }
+}
+function fallback(t){
+  var ta=document.createElement('textarea');
+  ta.value=t;document.body.appendChild(ta);ta.select();
+  document.execCommand('copy');document.body.removeChild(ta);flash();
+}
+function flash(){
+  var b=document.querySelector('.copy-btn');
+  b.textContent='✅ コピーしました！';b.classList.add('copied');
+  setTimeout(function(){b.textContent='📋 テキストをコピー';b.classList.remove('copied');},2500);
+}
+</script>
+
+</body>
+</html>
